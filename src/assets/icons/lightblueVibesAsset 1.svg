@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333.59 307.79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #669bbc;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <polyline class="cls-1" points="20.48 0 52.07 0 52.07 148.19 20.48 148.19 20.48 5.92"/>
+    <polyline class="cls-1" points="65.69 0 99.42 0 99.42 148.19 65.69 148.19 65.69 5.92"/>
+    <polyline class="cls-1" points="0 153.81 27.75 153.81 27.75 302 0 302 0 159.73"/>
+    <polyline class="cls-1" points="39.21 154.59 72.94 154.59 72.94 302.79 39.21 302.79 39.21 160.52"/>
+    <polyline class="cls-1" points="82.56 153.81 116.29 153.81 116.29 302 82.56 302 82.56 159.73"/>
+    <polyline class="cls-1" points="128.01 153.81 156.63 153.81 156.63 302 128.01 302 128.01 159.73"/>
+    <polyline class="cls-1" points="167.15 156.66 194.59 152.8 215.21 299.56 187.77 303.41 167.97 162.52"/>
+    <polyline class="cls-1" points="111.14 0 144.88 0 144.88 148.19 111.14 148.19 111.14 5.92"/>
+    <polyline class="cls-1" points="217.78 157.07 251.51 156.48 254.1 304.65 220.37 305.24 217.89 162.99"/>
+    <polyline class="cls-1" points="203.53 0 237.27 0 237.27 148.19 203.53 148.19 203.53 5.92"/>
+    <polyline class="cls-1" points="265.36 159.59 292.63 159.59 292.63 307.79 265.36 307.79 265.36 165.52"/>
+    <polyline class="cls-1" points="309.94 159.59 333.59 159.59 333.59 307.79 309.94 307.79 309.94 165.52"/>
+    <polyline class="cls-1" points="248.5 0 273.49 0 273.49 148.19 248.5 148.19 248.5 5.92"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+.header {
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+
+.header h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 70px;
+
+    font-weight: 600;
+}
+
+.jumbotron {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.jumbotron p {
+    font-size: 25px;
+}
