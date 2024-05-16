@@ -39,6 +39,8 @@ margin: 0;
 
 const SubTitle = styled.div`
   font-size: 24px;
+  font-family: 'raleway'
+  font-weight: 400;
 `
 const Logo = styled.img`
   position:fixed;
@@ -50,12 +52,12 @@ function Header() {
        <StyledHeader>
         <TopRow>
           <Logo className="Logo" src={logo} height="80" width="80" alt=""></Logo>
-          <Title>Mark Pascucci Clifford</Title>
+          <Title>Mark Pascucci-Clifford</Title>
           <div style={{width: 50}}></div>
         </TopRow>
         <BottomRow>
           <SubTitle>
-            <p>Percussionist * Composer * Programmer</p>
+            Percussionist • Composer • Programmer
           </SubTitle>
         </BottomRow>
       </StyledHeader>
