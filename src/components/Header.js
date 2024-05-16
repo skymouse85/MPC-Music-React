@@ -1,32 +1,64 @@
 import React from 'react';
-import logo from '../assets/icons/lightblueVibesAsset 1.svg';
+import logo from '../assets/icons/blackVibes.svg';
+import styled from 'styled-components'
 import '../styles/Header.css';
+
+// create styles as part of the component
+const StyledHeader = styled.header `
+background-color: var(--background-primary);
+color: var(--text-primary);
+width: 100%;
+margin-top: 15px;
+margin-bottom: 2em;
+padding: 1em;
+display: flex;
+flex-direction: column;
+align-items: center;
+`;
+
+const TopRow = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+`;
+const BottomRow = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px;
+`;
+
+
+const Title = styled.h1`
+font-family: 'Roboto Mono', monospace;
+font-size: 70px;
+font-weight: 600;
+margin: 0;
+`;
+
+const SubTitle = styled.div`
+  font-size: 24px;
+`
+const Logo = styled.img`
+  position:fixed;
+  left:2.5em;
+`
 
 function Header() {
     return (
-        <header className="jumbotron jumbotron-fluid header">
-        <div className="container">
-            <div className="row">
-                
-                <div className="col-3 col-sm-3 col-md-2 align-self-center ml-20">
-                    <a href="/">
-                        <img src={logo} className="img-fluid pb-10" height="80" width="80" href="#"
-                            alt="" />
-                    </a>
-                </div>
-                <div className="col-md-8 d-flex justify-content-center align-self-center">
-                    <h1>Mark Pascucci-Clifford</h1>
-                </div>
-
-            </div>
-            <div className="row">
-                <div className="col justify-content-center">
-                    <p className="d-flex justify-content-center">Vibraphonist • Composer • Programmer</p>
-                </div>
-            </div>
-        </div>
-
-    </header> 
+       <StyledHeader>
+        <TopRow>
+          <Logo className="Logo" src={logo} height="80" width="80" alt=""></Logo>
+          <Title>Mark Pascucci Clifford</Title>
+          <div style={{width: 50}}></div>
+        </TopRow>
+        <BottomRow>
+          <SubTitle>
+            <p>Percussionist * Composer * Programmer</p>
+          </SubTitle>
+        </BottomRow>
+      </StyledHeader>
     );
 }
 
