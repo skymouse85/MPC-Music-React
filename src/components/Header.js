@@ -8,9 +8,9 @@ const StyledHeader = styled.header `
 background-color: var(--background-primary);
 color: var(--text-primary);
 width: 100%;
-height: 40vh;
+height: 30vh;
 margin-top: 15px;
-margin-bottom: 1em;
+// margin-bottom: 1em;
 padding: 1em;
 display: flex;
 flex-direction: column;
@@ -31,21 +31,23 @@ const BottomRow = styled.div`
   display: flex;
   justify-content: center; 
   margin-top: 50px;
-  padd
+  
 `;
 
 
 const Title = styled.h1`
-font-family: 'Roboto Mono', monospace;
-font-size: 70px;
+font-family: 'NeuePower-Ultra';
+font-size: 75px;
 font-weight: 600;
+font-kerning: auto;
 margin: 0;
 `;
 
 const SubTitle = styled.div`
   font-size: 24px;
-  font-family: 'raleway'
+  font-family: "raleway", sans-serif;
   font-weight: 400;
+  
 `
 const Logo = styled.img`
   //position:fixed;

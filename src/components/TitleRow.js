@@ -10,26 +10,21 @@ const TitleContainer = styled.header`
   margin-top: 10px;
   margin-bottom: 1em;
   padding: 1em;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;  // Three columns: icon, title, empty space
   align-items: center;
+  justify-content: center;
 `;
 
-const TopRow = styled.div`
-  width: 100%;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;  // Changed to space-around to better space elements
-  align-items: center;
-`;
 
 const PageTitle = styled.h1`
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'NeuePower-Ultra', monospace;
   font-size: 60px;
   font-weight: 600;
   margin: 0;
   flex-grow: 6;
   text-align: center;
+  color: var(--accent-secondary)
 `;
 const Spacer = styled.div`
     flex-grow: 1.75;
@@ -38,11 +33,9 @@ const Spacer = styled.div`
 function TitleRow({ title }) {  // Use destructuring to receive props
   return (
     <TitleContainer>
-      <TopRow>
         <HomeIcon />  
         <PageTitle>{title}</PageTitle>  
-        <Spacer/>
-      </TopRow>
+        <div />
     </TitleContainer>
   );
 }

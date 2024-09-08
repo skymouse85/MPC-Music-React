@@ -15,8 +15,8 @@ const StyledFooter = styled.footer`
     color: var(--text-primary);
     width: 100%;
     padding: 20px 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin-top: 35px;
      border-top: 1px solid #003049;
@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
 const LinksRow = styled.div`
     display: flex;
     justify-content: center; 
-    gap: 20px;  // Controls spacing between icons
+    gap: 20px;  
 `;
 
 const FooterText = styled.p`
@@ -35,7 +35,23 @@ const FooterText = styled.p`
 
 function Footer() {
     return (
+        <>
         <StyledFooter>
+            
+                <TextContainer>
+                    <FooterText>
+                        Home
+                    </FooterText>
+                    <FooterText>
+                    Bio
+                    </FooterText>
+                    <FooterText>
+                    Listen
+                    </FooterText>
+                </TextContainer>
+                
+          
+            <div>
             <LinksRow>
                 <IconLink href="https://thedirtysnacksensemble.bandcamp.com/" icon={BandcampIcon} title="Bandcamp" target='_blank' rel='noopener noreferrer'/>
                 <IconLink href="https://www.instagram.com/mouscula/" icon={InstagramIcon} title="Instagram" target='_blank' rel='noopener noreferrer'/>
@@ -49,7 +65,10 @@ function Footer() {
                 <FooterText>Featured Photography: Lenny Gonzalez</FooterText>
                 <FooterText>Web Design: Mark Pascucci-Clifford</FooterText>
             </TextContainer>
+            </div>
+           
         </StyledFooter>
+        </>
     );
 }
 

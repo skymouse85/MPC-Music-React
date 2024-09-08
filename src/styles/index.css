@@ -4,10 +4,17 @@
   --text-primary: #010101;
   --text-secondary: #bdb296;
   --accent-primary: #ff5252;
-  --accent-secondary: #99bbad;
+  --accent-secondary: #669BBC;
   --ui-negative: #fff;
   --law-text: #fff;
   --law-background: #010101;
+}
+
+@font-face {
+  font-family: 'NeuePower-Ultra';
+  src: url('../assets/fonts/NeuePower-Ultra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {

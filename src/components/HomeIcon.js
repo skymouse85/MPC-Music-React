@@ -4,11 +4,10 @@ import styled from 'styled-components';
 import HomeIconSVG from '../assets/icons/lightblueVibesAsset 1.svg';  // Correctly named SVG import
 
 const HomeLink = styled(Link)`
-//   display: inline-block;
   margin: 0 10px;  // Default spacing for larger screens
-  width: 60px;  // Default size for larger screens
-  height: 60px;  // Default size
-  flex-grow: 1;
+  width: 80px;  // Default size for larger screens
+  height: 80px;  // Default size
+  justify-self: center;
 
   &:hover, &:focus {
     opacity: 0.8;  // Visual feedback on hover/focus
@@ -23,7 +22,7 @@ const HomeLink = styled(Link)`
 const HomeIcon = () => {
     return (
         <HomeLink to="/">
-            <img src={HomeIconSVG} alt="Home" style={{ width: '60px', height: '60px' }} />
+            <img src={HomeIconSVG} alt="Home"  />
         </HomeLink>
     );
 }

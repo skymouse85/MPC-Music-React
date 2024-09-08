@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HeroImageContainer = styled.div`
     width: 100%;
-    height: 650px;
+    // height: 650px;
     background-image: url(${props => props.src});
     background-size: cover;
     background-position: center;

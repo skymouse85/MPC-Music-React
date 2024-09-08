@@ -7,7 +7,7 @@ function Contact() {
     <div>
       <TitleRow title="Contact"/>
       <TextContainer center="true">
-        <p>📞 Call me, don't be afraid you can calllll me.</p>
+        <p>📞   --> Just callllll me, don't be afraid you can calllll me.</p>
       </TextContainer>
     </div>
   );
