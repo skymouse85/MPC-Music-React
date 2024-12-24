@@ -10,6 +10,7 @@ import Photos from './pages/Photos';
 import Programming from './pages/Programming';
 import SheetMusic from './pages/SheetMusic';
 import Videos from './pages/Videos';
+import Discography from './pages/Discog'
 import LogoDropdown from './components/LogoDropdown';
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/contact" component={Contact} />
             <Route path="/performance-calendar" component={PerformanceCalendar} />
             <Route path="/photos" component={Photos} />
+            <Route path="/discography" component={Discography} />
             <Route path="/programming" component={Programming} />
             <Route path="/sheet-music" component={SheetMusic} />
             <Route path="/videos" component={Videos} />
