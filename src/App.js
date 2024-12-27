@@ -29,7 +29,6 @@ function App() {
             <Route path="/programming" component={Programming} />
             <Route path="/sheet-music" component={SheetMusic} />
             <Route path="/videos" component={Videos} />
-            {/* Add other routes here */}
           </Switch>
         <Footer />
         </div>
