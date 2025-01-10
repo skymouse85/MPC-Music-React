@@ -13,13 +13,13 @@ const DiscographyContainer = styled.div`
 const Section = styled.div``;
 
 const SectionTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 `;
 
 const AlbumGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 `;
 
@@ -47,7 +47,7 @@ const AlbumImage = styled.img`
   opacity: 1;
 
   ${AlbumCard}:hover & {
-    opacity: 0.3;
+    opacity: 0.2;
   }
 `;
 
@@ -59,22 +59,23 @@ const AlbumDetails = styled.div`
   text-align: center;
   color: var(--accent-primary);
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none
   transition: opacity 0.3s ease;
 
   ${AlbumCard}:hover & {
     opacity: 1;
+    pointer-events: auto;
   }
 `;
 
 const AlbumTitle = styled.h3`
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 `;
 
 const AlbumSubtitle = styled.p`
   margin: 0.2rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;
 
 const DiscogList = () => {
@@ -92,8 +93,11 @@ const DiscogList = () => {
       <AlbumCard key={item.record_URL}>
         <AlbumImage src={item.image_URL} alt={item.record_Title} />
         <AlbumDetails>
-          <AlbumTitle>{item.record_Title}</AlbumTitle>
-          <AlbumSubtitle>{item.artist}</AlbumSubtitle>
+          <a href={item.record_URL} target='_blank' rel='noopener noreferrer'>
+          <AlbumTitle>{item.artist}</AlbumTitle>
+          <AlbumSubtitle
+          >{item.record_Title}</AlbumSubtitle>
+          </a>
           <AlbumSubtitle>Released: {formatDate(item.release_date)}</AlbumSubtitle>
         </AlbumDetails>
       </AlbumCard>
@@ -102,11 +106,11 @@ const DiscogList = () => {
   return (
     <DiscographyContainer>
       <Section>
-        <SectionTitle>Leader/Co-Leader</SectionTitle>
+        <SectionTitle>As a Leader/Co-Leader</SectionTitle>
         <AlbumGrid>{renderAlbums(leaderItems)}</AlbumGrid>
       </Section>
       <Section>
-        <SectionTitle>Featured Artist/Sideman</SectionTitle>
+        <SectionTitle>As a Featured Artist/Sideman</SectionTitle>
         <AlbumGrid>{renderAlbums(sidemanItems)}</AlbumGrid>
       </Section>
     </DiscographyContainer>

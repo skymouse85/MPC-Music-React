@@ -8,6 +8,79 @@ const discItems = [
         image_URL: require('../assets/images/LostShapes.jpg')
     },
     {
+        artist: 'Rob Shelton',
+        record_Title: 'Hibernation Wakeup',
+        record_URL: 'https://robshelton.bandcamp.com/album/hibernation-wakeup',
+        classification: 'sideman',
+        release_date: new Date('6/22/2022'),
+        image_URL: require('../assets/images/shelton Hiber:Wakeujp.jpg')
+    },
+    {
+        artist: 'Rob Shelton',
+        record_Title: 'The Rain on East Ridge',
+        record_URL: 'https://robshelton.bandcamp.com/track/the-rain-on-east-ridge',
+        classification: 'sideman',
+        release_date: new Date('3/4/2022'),
+        image_URL: require('../assets/images/RSheltonRainEast.jpg')
+    },
+    {
+        artist: 'Bells Atlas',
+        record_Title: 'Bells Atlas',
+        record_URL: 'https://bellsatlas.bandcamp.com/album/bells-atlas-3',
+        classification: 'sideman',
+        release_date: new Date('6/18/2013'),
+        image_URL: require('../assets/images/BellsAtlas.jpg')
+    },
+    {
+        artist: 'Greg Roensch',
+        record_Title: 'Howling at the Moons of Saturn',
+        record_URL: 'https://gregroensch.bandcamp.com/album/howling-at-the-moons-of-saturn',
+        classification: 'sideman',
+        release_date: new Date('11/1/2024'),
+        image_URL: require('../assets/images/Roensch.jpg')
+    },
+    {
+        artist: 'Rob Shelton',
+        record_Title: 'Eight Lines/The Seer',
+        record_URL: 'https://robshelton.bandcamp.com/album/eight-lines-the-seer',
+        classification: 'sideman',
+        release_date: new Date('6/1/2020'),
+        image_URL: require('../assets/images/RShelton8Lines.jpg')
+    },
+    {
+        artist: 'DRMS',
+        record_Title: 'DRMS',
+        record_URL: 'https://drms.bandcamp.com/album/drms',
+        classification: 'sideman',
+        release_date: new Date('6/28/2012'),
+        image_URL: require('../assets/images/DRMS.jpg')
+    },
+    {
+        artist: 'DRMS',
+        record_Title: 'Ostinato',
+        record_URL: 'https://drms.bandcamp.com/track/ostinato',
+        classification: 'sideman',
+        release_date: new Date('10/2/2014'),
+        image_URL: require('../assets/images/DRMSOstinato.jpg')
+    },
+    {
+        artist: 'DRMS',
+        record_Title: 'American 707',
+        record_URL: 'https://drms.bandcamp.com/album/american-707',
+        classification: 'sideman',
+        release_date: new Date('2/18/2014'),
+        image_URL: require('../assets/images/DRMS707.jpg')
+    },
+    {
+        artist: 'DRMS',
+        record_Title: 'Night Forest',
+        record_URL: 'https://drms.bandcamp.com/album/night-forest',
+        classification: 'sideman',
+        release_date: new Date('6/5/2013'),
+        image_URL: require('../assets/images/DRMSNightForest.jpg')
+    },
+
+    {
         artist: 'Trivial Shields',
         record_Title: 'Another Block Single',
         record_URL: 'https://trivialshields.bandcamp.com/track/another-block',
@@ -214,6 +287,38 @@ const discItems = [
         classification: 'leader',
         release_date: new Date('6/3/2014'),
         image_URL: require('../assets/images/COTY.jpg')
+    },
+    {
+        artist: "Joe Rut",
+        record_Title: 'Finger Painted Sun',
+        record_URL: 'https://joerut.bandcamp.com/album/finger-painted-sun',
+        classification: 'sideman',
+        release_date: new Date('2/3/2021'),
+        image_URL: require('../assets/images/JRut.jpg')
+    },
+    {
+        artist: "Cave Clove",
+        record_Title: 'Still Just As Free',
+        record_URL: 'https://caveclove.bandcamp.com/album/still-just-as-free',
+        classification: 'sideman',
+        release_date: new Date('12/13/2013'),
+        image_URL: require('../assets/images/CaveClove.jpg')
+    },
+    {
+        artist: "Bill Baird",
+        record_Title: 'Soundtrack',
+        record_URL: 'https://billbaird.bandcamp.com/album/soundtrack',
+        classification: 'sideman',
+        release_date: new Date('4/8/2024'),
+        image_URL: require('../assets/images/BairdSoundtrack.jpg')
+    },
+    {
+        artist: "Meerna",
+        record_Title: 'So Far So Good',
+        record_URL: 'https://meernaa.bandcamp.com/album/so-far-so-good',
+        classification: 'sideman',
+        release_date: new Date('10/6/2023'),
+        image_URL: require('../assets/images/SoFarSoGood.jpg')
     },
 ];
 
