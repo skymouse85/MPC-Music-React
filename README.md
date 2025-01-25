@@ -1,6 +1,6 @@
 # Greetings
 
-This is a rebuild of my website using React.js.
+This is a rebuild of my website using React.js and Styled Components.
 
 It will also use Google Calendar API to dynamically port my performances on to my shows page.
 
