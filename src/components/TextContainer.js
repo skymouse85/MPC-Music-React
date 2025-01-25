@@ -11,6 +11,7 @@ const TextContainer = styled.div`
     font-family: 'Roboto', sans-serif; // Example of setting a default font
     border-radius: 8px; // Optional: adds rounded corners
     text-align: ${props => props.center ? 'center' : 'left'};  // Default to left if no 'center' prop is provided
+    // width: 100%
 `
 
 export default TextContainer;
