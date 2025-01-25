@@ -114,7 +114,7 @@ function Footer() {
                     <IconLink href="https://www.facebook.com/mark.clifford.714/" icon={FaceBookIcon} title="Facebook" target="_blank" rel="noopener noreferrer" />
                 </LinksRow>
                 <TextContainer center="true">
-                    <FooterText>All rights reserved. Mark Pascucci-Clifford ©2024</FooterText>
+                    <FooterText>All rights reserved. Mark Pascucci-Clifford ©2025</FooterText>
                     <FooterText>Featured Photography: Lenny Gonzalez</FooterText>
                     <FooterText>Web Design: Mark Pascucci-Clifford</FooterText>
                 </TextContainer>
