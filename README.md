@@ -1,4 +1,4 @@
-#Greetings
+# Greetings
 
 This is a rebuild of my website using React.js.
 
