@@ -74,7 +74,7 @@ function Footer() {
         { name: 'Home', path: '/' },
         { name: 'Bio', path: '/bio' },
         { name: 'Listen', path: '/discography' },
-        { name: 'Performance Calendar', path: '/performance-calendar' },
+        { name: 'Shows', path: '/performance-calendar' },
         { name: 'Photos', path: '/photos' },
         { name: 'Videos', path: '/videos' },
         { name: 'Programming', path: '/programming' },
