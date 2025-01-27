@@ -9,12 +9,13 @@ function Bio() {
     
     <div>
       <TitleRow title="Biography"/>
-      <TextContainer center="true" >
-        <p>Learn everything there is to know about me, starting with this short bio.</p>
-        
-      </TextContainer>
+         <TextContainer center="true" >
+            <h2>Short Bio</h2>
+          </TextContainer>
       <ShortBio></ShortBio>
-      
+      <TextContainer center="true">
+        <h2>Long Bio</h2>
+      </TextContainer>
     </div>
     </>
   );
