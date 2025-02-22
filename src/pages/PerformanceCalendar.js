@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Footer from '../components/Footer'; // Adjust the import path as needed
+import TitleRow from '../components/TitleRow';
+import TextContainer from '../components/TextContainer';
 import SmHeader from '../components/Header'; // Adjust the import path as needed
 
 const PageContainer = styled.div`
@@ -17,28 +18,25 @@ const Title = styled.h1`
   margin-bottom: 1.5rem;
 `;
 
-const EventContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+const EventListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 `;
 
-const EventCard = styled.div`
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
+const EventItem = styled.div`
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  
+  &:last-child {
+    border-bottom: none;
   }
 `;
 
 const EventTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 `;
 
@@ -92,11 +90,11 @@ function EventList() {
 
   return (
     <PageContainer>
-      <HeaderContainer>
-        <SmHeader />
-      </HeaderContainer>
-      <Title>Upcoming Shows</Title>
-      <EventContainer>
+     <TitleRow title="Upcoming Shows"/>
+    <TextContainer center="true" >
+      <h2>Come Through!</h2>
+    </TextContainer>
+      <EventListContainer>
         {events
           .sort((a, b) =>
             new Date(a.start?.dateTime || 0) - new Date(b.start?.dateTime || 0)
@@ -118,17 +116,16 @@ function EventList() {
             });
 
             return (
-              <EventCard key={event.id}>
+              <EventItem key={event.id}>
                 <EventTitle>{event.summary}</EventTitle>
-                <EventDetails>Date: {startDateStr}</EventDetails>
-                <EventDetails>Time: {startTimeStr} - {endTimeStr}</EventDetails>
-                <EventDetails>Location: {event.location}</EventDetails>
-                <EventDetails>Description: {event.description}</EventDetails>
-              </EventCard>
+                <EventDetails><strong>Date:</strong> {startDateStr}</EventDetails>
+                <EventDetails><strong>Time:</strong> {startTimeStr} - {endTimeStr}</EventDetails>
+                <EventDetails><strong>Location:</strong> {event.location}</EventDetails>
+                <EventDetails><strong>Description:</strong> {event.description}</EventDetails>
+              </EventItem>
             );
           })}
-      </EventContainer>
-      
+      </EventListContainer>
     </PageContainer>
   );
 }
