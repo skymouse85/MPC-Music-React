@@ -8,8 +8,8 @@ import Home from './pages/Home';
 import PerformanceCalendar from './pages/PerformanceCalendar';
 import Photos from './pages/Photos';
 import Programming from './pages/Programming';
-import SheetMusic from './pages/SheetMusic';
 import Videos from './pages/Videos';
+import SheetMusic from './pages/SheetMusic';
 import Discography from './pages/Discog'
 import LogoDropdown from './components/LogoDropdown';
 
@@ -30,9 +30,9 @@ function App() {
             <Route path="/sheet-music" component={SheetMusic} />
             <Route path="/videos" component={Videos} />
           </Switch>
-        <Footer />
+          <Footer />
         </div>
- 
+
       </Router>
     </>
   );
