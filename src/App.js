@@ -10,7 +10,7 @@ import Photos from './pages/Photos';
 import Programming from './pages/Programming';
 import Videos from './pages/Videos';
 import SheetMusic from './pages/SheetMusic';
-import Discography from './pages/Discog'
+import Discography from './pages/Discog';
 import LogoDropdown from './components/LogoDropdown';
 
 

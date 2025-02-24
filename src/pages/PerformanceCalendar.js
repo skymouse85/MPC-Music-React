@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import TitleRow from '../components/TitleRow';
 import TextContainer from '../components/TextContainer';
 import SmHeader from '../components/Header'; // Adjust the import path as needed
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const PageContainer = styled.div`
   margin: 2rem;
@@ -54,6 +55,7 @@ const ErrorMessage = styled.div`
 function EventList() {
   const [events, setEvents] = useState([]);
   const [error, setError] = useState(null);
+  const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -78,11 +80,25 @@ function EventList() {
       } catch (err) {
         console.error('Error fetching events:', err);
         setError('Failed to fetch events.');
+      } finally {
+        setLoading(false)
       }
     };
 
     fetchEvents();
   }, []);
+
+  if (Loading) {
+    return (
+      <PageContainer>
+        <TitleRow title="Upcoming Shows" />
+        <TextContainer center="true" >
+          <h2>Come Through!</h2>
+        </TextContainer>
+        <LoadingSpinner />
+      </PageContainer>
+    )
+  }
 
   if (error) {
     return <ErrorMessage>Error: {error}</ErrorMessage>;
@@ -90,10 +106,10 @@ function EventList() {
 
   return (
     <PageContainer>
-     <TitleRow title="Upcoming Shows"/>
-    <TextContainer center="true" >
-      <h2>Come Through!</h2>
-    </TextContainer>
+      <TitleRow title="Upcoming Shows" />
+      <TextContainer center="true" >
+        <h2>Come Through!</h2>
+      </TextContainer>
       <EventListContainer>
         {events
           .sort((a, b) =>
