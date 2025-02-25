@@ -63,19 +63,19 @@ const SheetMusic = () => {
               <CompositionContainer key={composition.name}>
                 <CompositionTitle>{composition.name}</CompositionTitle>
                 <FileList>
-                <FileItem>
-                  {console.log("Score Link:", composition.score)}
-                  <FileLink href={composition.score} target="_blank" rel="noopener noreferrer">
-                    View/Download Score
-                  </FileLink>
-                </FileItem>
-                {composition.parts.map(part => (
-                  <FileItem key={part.file}>
-                    {console.log("Part Link:", part.file)}
-                    <FileLink href={part.file} target="_blank" rel="noopener noreferrer">
-                      {part.name}
+                  <FileItem>
+                    {console.log("Score Link:", composition.score)}
+                    <FileLink href={composition.score} target="_blank" rel="noopener noreferrer">
+                      View/Download Score
                     </FileLink>
                   </FileItem>
+                  {composition.parts.map(part => (
+                    <FileItem key={part.file}>
+                      {console.log("Part Link:", part.file)}
+                      <FileLink href={part.file} target="_blank" rel="noopener noreferrer">
+                        {part.name}
+                      </FileLink>
+                    </FileItem>
                   ))}
                 </FileList>
               </CompositionContainer>
@@ -85,15 +85,16 @@ const SheetMusic = () => {
       </Section>
     ));
 
-    return (
-      <>
-    <TitleRow title="Sheet Music"/>
-    <TextContainer center="true" >
-      <p>Scores & Parts for Selected Compositions/Projects</p>
-    </TextContainer>
-   <ScoresContainer>{renderScores(scores)}</ScoresContainer>
-  </>
-  )  
+  return (
+    <>
+      <TitleRow title="Sheet Music" />
+      <TextContainer center="true" >
+        <p>Scores & Parts for Selected Compositions/Projects</p>
+        <p>This is an ongoing project, so scores and parts are being uploaded bit by bit, and I am working on improving the layout of this page</p>
+      </TextContainer>
+      <ScoresContainer>{renderScores(scores)}</ScoresContainer>
+    </>
+  )
 };
 
 export default SheetMusic;

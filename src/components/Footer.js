@@ -77,9 +77,9 @@ function Footer() {
         { name: 'Shows', path: '/performance-calendar' },
         { name: 'Photos', path: '/photos' },
         { name: 'Videos', path: '/videos' },
-        { name: 'Programming', path: '/programming' },
         { name: 'Sheet Music', path: '/sheet-music' },
         { name: 'Contact', path: '/contact' },
+        { name: 'Programming', path: '/programming' },
     ];
 
     // Group pages into columns of three
@@ -95,8 +95,8 @@ function Footer() {
             <SiteLinksWrapper>
                 {groupedPages.map((group, index) => (
                     <FooterColumn key={index}>
-                        {group.map(({name, path}, i) => (
-                            <FooterLink to={path} key={i}> 
+                        {group.map(({ name, path }, i) => (
+                            <FooterLink to={path} key={i}>
                                 {name}
                             </FooterLink>
                         ))}
