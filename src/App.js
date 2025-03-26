@@ -9,7 +9,7 @@ import PerformanceCalendar from './pages/PerformanceCalendar';
 import Photos from './pages/Photos';
 import Programming from './pages/Programming';
 import Videos from './pages/Videos';
-// import SheetMusic from './pages/SheetMusic';
+import SheetMusic from './pages/SheetMusic';
 import Discography from './pages/Discog';
 import LogoDropdown from './components/LogoDropdown';
 
@@ -27,7 +27,7 @@ function App() {
             <Route path="/photos" component={Photos} />
             <Route path="/discography" component={Discography} />
             <Route path="/programming" component={Programming} />
-            {/* <Route path="/sheet-music" component={SheetMusic} /> */}
+            <Route path="/sheet-music" component={SheetMusic} />
             <Route path="/videos" component={Videos} />
           </Switch>
           <Footer />
