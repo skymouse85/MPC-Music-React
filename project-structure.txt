@@ -906,7 +906,6 @@
 └── src
     ├── App.js
     ├── App.test.js
-    ├── assets
     ├── components
     ├── config
     ├── index.js
@@ -914,6 +913,7 @@
     ├── pages
     ├── reportWebVitals.js
     ├── setupTests.js
+    ├── srcAssets
     ├── styles
     └── utils
 
