@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logoSrc from '../assets/icons/BlackVibes.svg';
+import logoSrc from '../srcAssets/icons/BlackVibes.svg';
 import menuItems from '../config/navigation';
 
 const DropdownContainer = styled.div`
@@ -36,7 +36,7 @@ const LogoDropdown = () => {
 
   return (
     <DropdownContainer onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
-     <img src={logoSrc} alt="Logo" style={{ width: '80px', height: '80px' }} />
+      <img src={logoSrc} alt="Logo" style={{ width: '80px', height: '80px' }} />
       <DropdownContent isOpen={isOpen}>
         {menuItems.map(item => (
           <DropdownItem to={item.path} key={item.name}>

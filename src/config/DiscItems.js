@@ -5,7 +5,7 @@ const discItems = [
         record_URL: 'https://thelostshapes.bandcamp.com/album/surface-tension',
         classification: 'leader',
         release_date: new Date('12/6/2024'),
-        image_URL: require('../assets/images/LostShapes.jpg')
+        image_URL: require('../srcAssets/images/LostShapes.jpg')
     },
     {
         artist: 'Rob Shelton',
@@ -13,7 +13,7 @@ const discItems = [
         record_URL: 'https://robshelton.bandcamp.com/album/hibernation-wakeup',
         classification: 'sideman',
         release_date: new Date('6/22/2022'),
-        image_URL: require('../assets/images/shelton Hiber:Wakeujp.jpg')
+        image_URL: require('../srcAssets/images/shelton Hiber:Wakeujp.jpg')
     },
     {
         artist: 'Rob Shelton',
@@ -21,7 +21,7 @@ const discItems = [
         record_URL: 'https://robshelton.bandcamp.com/track/the-rain-on-east-ridge',
         classification: 'sideman',
         release_date: new Date('3/4/2022'),
-        image_URL: require('../assets/images/RSheltonRainEast.jpg')
+        image_URL: require('../srcAssets/images/RSheltonRainEast.jpg')
     },
     {
         artist: 'Bells Atlas',
@@ -29,7 +29,7 @@ const discItems = [
         record_URL: 'https://bellsatlas.bandcamp.com/album/bells-atlas-3',
         classification: 'sideman',
         release_date: new Date('6/18/2013'),
-        image_URL: require('../assets/images/BellsAtlas.jpg')
+        image_URL: require('../srcAssets/images/BellsAtlas.jpg')
     },
     {
         artist: 'Greg Roensch',
@@ -37,7 +37,7 @@ const discItems = [
         record_URL: 'https://gregroensch.bandcamp.com/album/howling-at-the-moons-of-saturn',
         classification: 'sideman',
         release_date: new Date('11/1/2024'),
-        image_URL: require('../assets/images/Roensch.jpg')
+        image_URL: require('../srcAssets/images/Roensch.jpg')
     },
     {
         artist: 'Rob Shelton',
@@ -45,7 +45,7 @@ const discItems = [
         record_URL: 'https://robshelton.bandcamp.com/album/eight-lines-the-seer',
         classification: 'sideman',
         release_date: new Date('6/1/2020'),
-        image_URL: require('../assets/images/RShelton8Lines.jpg')
+        image_URL: require('../srcAssets/images/RShelton8Lines.jpg')
     },
     {
         artist: 'DRMS',
@@ -53,7 +53,7 @@ const discItems = [
         record_URL: 'https://drms.bandcamp.com/album/drms',
         classification: 'sideman',
         release_date: new Date('6/28/2012'),
-        image_URL: require('../assets/images/DRMS.jpg')
+        image_URL: require('../srcAssets/images/DRMS.jpg')
     },
     {
         artist: 'DRMS',
@@ -61,7 +61,7 @@ const discItems = [
         record_URL: 'https://drms.bandcamp.com/track/ostinato',
         classification: 'sideman',
         release_date: new Date('10/2/2014'),
-        image_URL: require('../assets/images/DRMSOstinato.jpg')
+        image_URL: require('../srcAssets/images/DRMSOstinato.jpg')
     },
     {
         artist: 'DRMS',
@@ -69,7 +69,7 @@ const discItems = [
         record_URL: 'https://drms.bandcamp.com/album/american-707',
         classification: 'sideman',
         release_date: new Date('2/18/2014'),
-        image_URL: require('../assets/images/DRMS707.jpg')
+        image_URL: require('../srcAssets/images/DRMS707.jpg')
     },
     {
         artist: 'DRMS',
@@ -77,7 +77,7 @@ const discItems = [
         record_URL: 'https://drms.bandcamp.com/album/night-forest',
         classification: 'sideman',
         release_date: new Date('6/5/2013'),
-        image_URL: require('../assets/images/DRMSNightForest.jpg')
+        image_URL: require('../srcAssets/images/DRMSNightForest.jpg')
     },
 
     {
@@ -86,7 +86,7 @@ const discItems = [
         record_URL: 'https://trivialshields.bandcamp.com/track/another-block',
         classification: 'sideman',
         release_date: new Date('12/19/2024'),
-        image_URL: require('../assets/images/AnotherBlock.jpg')
+        image_URL: require('../srcAssets/images/AnotherBlock.jpg')
     },
     {
         artist: 'Trivial Shields',
@@ -94,7 +94,7 @@ const discItems = [
         record_URL: 'https://open.spotify.com/album/7rNujcZXuz3EiyshlcBULJ?si=awO9mbJCT1WWmcLJNC2LSg',
         classification: 'sideman',
         release_date: new Date('11/19/2024'),
-        image_URL: require('../assets/images/Headlight+Operator.png')
+        image_URL: require('../srcAssets/images/Headlight+Operator.png')
     },
     {
         artist: 'Nubdub Ensemble',
@@ -102,7 +102,7 @@ const discItems = [
         record_URL: 'https://nubdugensemble.bandcamp.com/album/third',
         classification: 'sideman',
         release_date: new Date('11/5/2024'),
-        image_URL: require('../assets/images/nubdug.jpg')
+        image_URL: require('../srcAssets/images/nubdug.jpg')
     },
     {
         artist: 'Onkos',
@@ -110,7 +110,7 @@ const discItems = [
         record_URL: 'https://i-voidhangerrecords.bandcamp.com/album/vascular-labyrinth',
         classification: 'sideman',
         release_date: new Date('5/12/2023'),
-        image_URL: require('../assets/images/Onkos.jpg')
+        image_URL: require('../srcAssets/images/Onkos.jpg')
     },
     {
         artist: 'The Dirty Snacks Ensemble',
@@ -118,7 +118,7 @@ const discItems = [
         record_URL: 'https://thedirtysnacksensemble.bandcamp.com/album/you-would-do-well',
         classification: 'leader',
         release_date: new Date('9/16/2022'),
-        image_URL: require('../assets/images/WyDW.jpg')
+        image_URL: require('../srcAssets/images/WyDW.jpg')
     },
     {
         artist: 'The Dirty Snacks Ensemble',
@@ -126,7 +126,7 @@ const discItems = [
         record_URL: 'https://thedirtysnacksensemble.bandcamp.com/album/tidy-universe',
         classification: 'leader',
         release_date: new Date('6/11/2016'),
-        image_URL: require('../assets/images/Tidy U.jpg')
+        image_URL: require('../srcAssets/images/Tidy U.jpg')
     },
     {
         artist: 'The Dirty Snacks Ensemble',
@@ -134,7 +134,7 @@ const discItems = [
         record_URL: 'https://thedirtysnacksensemble.bandcamp.com/album/another-mans-treasure',
         classification: 'leader',
         release_date: new Date('6/24/2017'),
-        image_URL: require("../assets/images/Another Man's Treasure V3.jpg")
+        image_URL: require("../srcAssets/images/Another Man's Treasure V3.jpg")
     },
     {
         artist: 'Two Aerials',
@@ -142,7 +142,7 @@ const discItems = [
         record_URL: 'https://twoaerials.bandcamp.com/album/moonphase-ep',
         classification: 'leader',
         release_date: new Date('5/26/2017'),
-        image_URL: require('../assets/images/moonphase.jpg')
+        image_URL: require('../srcAssets/images/moonphase.jpg')
     },
     {
         artist: 'Gold Age',
@@ -150,7 +150,7 @@ const discItems = [
         record_URL: 'https://singlespeedmusic.bandcamp.com/album/gold-age',
         classification: 'leader',
         release_date: new Date('7/22/2016'),
-        image_URL: require('../assets/images/GoldAge.jpg')
+        image_URL: require('../srcAssets/images/GoldAge.jpg')
     },
     {
         artist: 'Nathan Clevenger',
@@ -158,7 +158,7 @@ const discItems = [
         record_URL: 'https://nathanclevenger.bandcamp.com/album/i-had-a-dream-about-amnesia',
         classification: 'sideman',
         release_date: new Date('1/21/2022'),
-        image_URL: require('../assets/images/clevengerAmnesia.jpg')
+        image_URL: require('../srcAssets/images/clevengerAmnesia.jpg')
     },
     {
         artist: 'Jill Rogers',
@@ -166,7 +166,7 @@ const discItems = [
         record_URL: 'https://jillrogers.bandcamp.com/album/cloudy-day-sunny',
         classification: 'sideman',
         release_date: new Date('12/4/2020'),
-        image_URL: require('../assets/images/rogers.jpg')
+        image_URL: require('../srcAssets/images/rogers.jpg')
     },
     {
         artist: 'Lisa Mezzacappa Six',
@@ -174,7 +174,7 @@ const discItems = [
         record_URL: 'https://lisamezzacappa.bandcamp.com/album/cosmicomics',
         classification: 'sideman',
         release_date: new Date('2/1/2020'),
-        image_URL: require('../assets/images/cosmicomics.jpg')
+        image_URL: require('../srcAssets/images/cosmicomics.jpg')
     },
     {
         artist: 'Aaron Novik',
@@ -182,7 +182,7 @@ const discItems = [
         record_URL: 'https://aaronnovik.bandcamp.com/album/o-o',
         classification: 'sideman',
         release_date: new Date('11/5/2019'),
-        image_URL: require('../assets/images/o+o+.jpg')
+        image_URL: require('../srcAssets/images/o+o+.jpg')
     },
     {
         artist: 'Aaron Novik',
@@ -190,7 +190,7 @@ const discItems = [
         record_URL: 'https://aaronnovik.bandcamp.com/album/frowny-frown-2',
         classification: 'sideman',
         release_date: new Date('1/1/2018'),
-        image_URL: require('../assets/images/frownyFrown.jpg')
+        image_URL: require('../srcAssets/images/frownyFrown.jpg')
     },
     {
         artist: "Rent Romus' Life's Blood Ensemble featuring Vinny Golia",
@@ -198,7 +198,7 @@ const discItems = [
         record_URL: 'https://rentromus.bandcamp.com/album/side-three-new-work',
         classification: 'sideman',
         release_date: new Date('3/5/2019'),
-        image_URL: require('../assets/images/rentANVinny.jpg')
+        image_URL: require('../srcAssets/images/rentANVinny.jpg')
     },
     {
         artist: "Rent Romus' Life's Blood Ensemble",
@@ -206,7 +206,7 @@ const discItems = [
         record_URL: 'https://rentromus.bandcamp.com/album/rogue-star',
         classification: 'sideman',
         release_date: new Date('3/5/2019'),
-        image_URL: require('../assets/images/rougeStar.jpg')
+        image_URL: require('../srcAssets/images/rougeStar.jpg')
     },
     {
         artist: "Rent Romus' Life's Blood Ensemble",
@@ -214,7 +214,7 @@ const discItems = [
         record_URL: 'https://rentromus.bandcamp.com/album/rising-colossus',
         classification: 'sideman',
         release_date: new Date('4/28/2016'),
-        image_URL: require('../assets/images/colossus.jpg')
+        image_URL: require('../srcAssets/images/colossus.jpg')
     },
     {
         artist: "Sis",
@@ -222,7 +222,7 @@ const discItems = [
         record_URL: 'https://bandcalledsis.bandcamp.com/album/gas-station-roses',
         classification: 'sideman',
         release_date: new Date('9/6/2019'),
-        image_URL: require('../assets/images/sis.jpg')
+        image_URL: require('../srcAssets/images/sis.jpg')
     },
     {
         artist: "Jordan Glenn",
@@ -230,7 +230,7 @@ const discItems = [
         record_URL: 'https://jordanglenn.bandcamp.com/album/beak',
         classification: 'sideman',
         release_date: new Date('9/26/2018'),
-        image_URL: require('../assets/images/beak.jpg')
+        image_URL: require('../srcAssets/images/beak.jpg')
     },
     {
         artist: "Robert Woods-Ladue",
@@ -238,7 +238,7 @@ const discItems = [
         record_URL: 'https://dennydennybreakfast.bandcamp.com/album/unlit-overpass',
         classification: 'sideman',
         release_date: new Date('1/6/2018'),
-        image_URL: require('../assets/images/unlitOverpass.jpg')
+        image_URL: require('../srcAssets/images/unlitOverpass.jpg')
     },
     {
         artist: "Mickey Theis",
@@ -246,7 +246,7 @@ const discItems = [
         record_URL: 'https://mickeytheis.bandcamp.com/album/range-songs',
         classification: 'sideman',
         release_date: new Date('9/27/2016'),
-        image_URL: require('../assets/images/RangeSongs.jpg')
+        image_URL: require('../srcAssets/images/RangeSongs.jpg')
     },
     {
         artist: "Mickey Theis",
@@ -254,7 +254,7 @@ const discItems = [
         record_URL: 'https://mickeytheis.bandcamp.com/album/no-saints',
         classification: 'sideman',
         release_date: new Date('9/7/2014'),
-        image_URL: require('../assets/images/noSaints.jpg')
+        image_URL: require('../srcAssets/images/noSaints.jpg')
     },
     {
         artist: "Mister Freedom | Neon Brown",
@@ -262,7 +262,7 @@ const discItems = [
         record_URL: 'https://iamneonbrown.bandcamp.com/album/mister-freedom',
         classification: 'sideman',
         release_date: new Date('9/7/2014'),
-        image_URL: require('../assets/images/MRFreedom.jpg')
+        image_URL: require('../srcAssets/images/MRFreedom.jpg')
     },
     {
         artist: "Dominique Leone",
@@ -270,7 +270,7 @@ const discItems = [
         record_URL: 'https://dominiqueleone.bandcamp.com/album/san-francisco',
         classification: 'sideman',
         release_date: new Date('9/7/2014'),
-        image_URL: require('../assets/images/DLSF.jpg')
+        image_URL: require('../srcAssets/images/DLSF.jpg')
     },
     {
         artist: "Robert Woods-Ladue | Mark Pascucci-Clifford",
@@ -278,7 +278,7 @@ const discItems = [
         record_URL: 'https://dennydennybreakfast.bandcamp.com/album/two-things',
         classification: 'leader',
         release_date: new Date('9/7/2014'),
-        image_URL: require('../assets/images/TwoThings.jpg')
+        image_URL: require('../srcAssets/images/TwoThings.jpg')
     },
     {
         artist: "Color of the Year with Danny Meyer and Colin Stanahan",
@@ -286,7 +286,7 @@ const discItems = [
         record_URL: 'https://coloroftheyear.bandcamp.com/album/color-of-the-year',
         classification: 'leader',
         release_date: new Date('6/3/2014'),
-        image_URL: require('../assets/images/COTY.jpg')
+        image_URL: require('../srcAssets/images/COTY.jpg')
     },
     {
         artist: "Joe Rut",
@@ -294,7 +294,7 @@ const discItems = [
         record_URL: 'https://joerut.bandcamp.com/album/finger-painted-sun',
         classification: 'sideman',
         release_date: new Date('2/3/2021'),
-        image_URL: require('../assets/images/JRut.jpg')
+        image_URL: require('../srcAssets/images/JRut.jpg')
     },
     {
         artist: "Cave Clove",
@@ -302,7 +302,7 @@ const discItems = [
         record_URL: 'https://caveclove.bandcamp.com/album/still-just-as-free',
         classification: 'sideman',
         release_date: new Date('12/13/2013'),
-        image_URL: require('../assets/images/CaveClove.jpg')
+        image_URL: require('../srcAssets/images/CaveClove.jpg')
     },
     {
         artist: "Bill Baird",
@@ -310,7 +310,7 @@ const discItems = [
         record_URL: 'https://billbaird.bandcamp.com/album/soundtrack',
         classification: 'sideman',
         release_date: new Date('4/8/2024'),
-        image_URL: require('../assets/images/BairdSoundtrack.jpg')
+        image_URL: require('../srcAssets/images/BairdSoundtrack.jpg')
     },
     {
         artist: "Meerna",
@@ -318,7 +318,7 @@ const discItems = [
         record_URL: 'https://meernaa.bandcamp.com/album/so-far-so-good',
         classification: 'sideman',
         release_date: new Date('10/6/2023'),
-        image_URL: require('../assets/images/SoFarSoGood.jpg')
+        image_URL: require('../srcAssets/images/SoFarSoGood.jpg')
     },
 ];
 

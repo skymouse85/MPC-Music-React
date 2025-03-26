@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import IconLink from './IconLink';
 import TextContainer from './TextContainer';
 import { Link } from 'react-router-dom/cjs/react-router-dom';
-import FaceBookIcon from '../assets/icons/facebook.svg';
-import InstagramIcon from '../assets/icons/instagram.svg';
-import SpotifyIcon from '../assets/icons/spotify.svg';
-import YoutubeIcon from '../assets/icons/youtube.svg';
-import TwitterIcon from '../assets/icons/twitter.svg';
-import BandcampIcon from '../assets/icons/Bandcamp-button-bc-circle-black.svg';
+import FaceBookIcon from '../srcAssets/icons/facebook.svg';
+import InstagramIcon from '../srcAssets/icons/instagram.svg';
+import SpotifyIcon from '../srcAssets/icons/spotify.svg';
+import YoutubeIcon from '../srcAssets/icons/youtube.svg';
+import TwitterIcon from '../srcAssets/icons/twitter.svg';
+import BandcampIcon from '../srcAssets/icons/Bandcamp-button-bc-circle-black.svg';
 
 const StyledFooter = styled.footer`
     background-color: var(--background-primary);

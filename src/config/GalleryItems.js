@@ -2,7 +2,7 @@ const GalleryItems = [
 
 
     {
-        src: require("../assets/images/galleryPhotos/colorCloseField.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/colorCloseField.jpg"),
         width: 3000,
         height: 2002,
         alt: "Color Close Field",
@@ -10,7 +10,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/colorField.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/colorField.jpg"),
         width: 3000,
         height: 2002,
         alt: "Color Field",
@@ -18,14 +18,14 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     // {
-    //     src: require("../assets/images/galleryPhotos/colorPortrait-Edit.jpg"),
+    //     src: require("../srcAssets/images/galleryPhotos/colorPortrait-Edit.jpg"),
     //     width: 2002,
     //     height: 2002,
     //     alt: "Cropped Color Portrait",
     //     photographer: 'Lenny Gonzalez'
     // },
     {
-        src: require("../assets/images/galleryPhotos/colorPortrait.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/colorPortrait.jpg"),
         width: 2002,
         height: 3000,
         alt: "Full Color Portrait",
@@ -33,7 +33,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/colorRoad.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/colorRoad.jpg"),
         width: 2002,
         height: 3000,
         alt: "Color Road",
@@ -41,7 +41,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/colorStreeWalk.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/colorStreeWalk.jpg"),
         width: 3000,
         height: 2002,
         alt: "Color Street Walking",
@@ -49,7 +49,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/colorTree.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/colorTree.jpg"),
         width: 2002,
         height: 3000,
         alt: "Color Tree Portrait",
@@ -57,7 +57,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/grey_closeField.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/grey_closeField.jpg"),
         width: 3000,
         height: 2002,
         alt: "Grey Close Field",
@@ -65,7 +65,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/greyField.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/greyField.jpg"),
         width: 3000,
         height: 2002,
         alt: "Grey Field",
@@ -73,7 +73,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/greyPortrait.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/greyPortrait.jpg"),
         width: 2002,
         height: 3000,
         alt: "Grey Portrait",
@@ -81,7 +81,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/greyRoad.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/greyRoad.jpg"),
         width: 2002,
         height: 3000,
         alt: "Grey Road",
@@ -89,7 +89,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/greyTree.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/greyTree.jpg"),
         width: 2002,
         height: 3000,
         alt: "Grey Tree",
@@ -97,7 +97,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/walking grey.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/walking grey.jpg"),
         width: 3000,
         height: 2002,
         alt: "Walking Grey",
@@ -105,7 +105,7 @@ const GalleryItems = [
         description: 'Photo by Lenny Gonzalez'
     },
     {
-        src: require("../assets/images/galleryPhotos/MarkBow.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/MarkBow.jpg"),
         width: 1600,
         height: 2413,
         alt: "Mark Session Bow",
@@ -113,7 +113,7 @@ const GalleryItems = [
         description: 'Photo by Ginger Fierstein'
     },
     {
-        src: require("../assets/images/galleryPhotos/MarkMarimba.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/MarkMarimba.jpg"),
         width: 1624,
         height: 1600,
         alt: "Mark Session Marimba",
@@ -121,7 +121,7 @@ const GalleryItems = [
         description: 'Photo by Ginger Fierstein'
     },
     {
-        src: require("../assets/images/galleryPhotos/MarkMarimba2.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/MarkMarimba2.jpg"),
         width: 1624,
         height: 1600,
         alt: "Mark Session Marimba 2",
@@ -129,7 +129,7 @@ const GalleryItems = [
         description: 'Photo by Ginger Fierstein'
     },
     {
-        src: require("../assets/images/galleryPhotos/MarkSessionPercussion.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/MarkSessionPercussion.jpg"),
         width: 1624,
         height: 1600,
         alt: "Mark Session Percussion",
@@ -137,7 +137,7 @@ const GalleryItems = [
         description: 'Photo by Ginger Fierstein'
     },
     {
-        src: require("../assets/images/galleryPhotos/MarkSessionVibes.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/MarkSessionVibes.jpg"),
         width: 1600,
         height: 2413,
         alt: "Mark Session Vibes",
@@ -145,7 +145,7 @@ const GalleryItems = [
         description: 'Photo by Ginger Fierstein'
     },
     {
-        src: require("../assets/images/galleryPhotos/MarkSessionPiano.jpg"),
+        src: require("../srcAssets/images/galleryPhotos/MarkSessionPiano.jpg"),
         width: 1600,
         height: 2413,
         alt: "Mark Session Piano",

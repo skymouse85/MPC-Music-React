@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import HomeIconSVG from '../assets/icons/lightblueVibesAsset 1.svg';  // Correctly named SVG import
+import HomeIconSVG from '../srcAssets/icons/lightblueVibesAsset 1.svg';  // Correctly named SVG import
 
 const HomeLink = styled(Link)`
   margin: 0 10px;  // Default spacing for larger screens
@@ -20,11 +20,11 @@ const HomeLink = styled(Link)`
 `;
 
 const HomeIcon = () => {
-    return (
-        <HomeLink to="/">
-            <img src={HomeIconSVG} alt="Home"  />
-        </HomeLink>
-    );
+  return (
+    <HomeLink to="/">
+      <img src={HomeIconSVG} alt="Home" />
+    </HomeLink>
+  );
 }
 
 export default HomeIcon;

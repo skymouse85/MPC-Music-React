@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'NeuePower-Ultra';
-  src: url('../assets/fonts/NeuePower-Ultra.ttf') format('truetype');
+  src: url('../srcAssets/fonts/NeuePower-Ultra.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -55,6 +55,7 @@ h4 {
   font-family: "raleway", sans-serif;
   font-weight: 400;
 }
+
 a {
   color: #ff5252;
 }
