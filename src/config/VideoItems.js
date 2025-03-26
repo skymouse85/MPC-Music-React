@@ -10,8 +10,6 @@ const VideoItems = [
         thumbnail: "src/assets/images/ShowmenThumb.png"
     },
 
-
-
 ]
 
 export default VideoItems;
