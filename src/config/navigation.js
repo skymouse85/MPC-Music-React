@@ -5,7 +5,7 @@ const menuItems = [
   { name: "Performance Calendar", path: "/performance-calendar" },
   { name: "Photos", path: "/photos" },
   { name: "Discography", path: "/discography" },
-  // { name: "Sheet Music", path: "/sheet-music" },
+  { name: "Sheet Music", path: "/sheet-music" },
   { name: "Videos", path: "/videos" },
   { name: "Contact", path: "/contact" },
   { name: "Programming", path: "/programming" },
