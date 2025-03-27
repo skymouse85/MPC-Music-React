@@ -9,23 +9,23 @@ const scores = [
                 compositions: [
                     {
                         name: 'Showmen',
-                        score: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenFullScore.pdf',
+                        score: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenFullScore.pdf'),
                         parts: [
-                            { name: 'Voice', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenAlto.pdf' },
-                            { name: 'Clarinet', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenClarinet.pdf' },
-                            { name: 'Drum Set', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenDrumSet.pdf' },
-                            { name: 'Bass', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenElectricBass.pdf' },
-                            { name: 'Piano', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenPiano.pdf' },
-                            { name: 'Vibraphone', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenVibraphone.pdf' },
-                            { name: 'Cello', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenVioloncello.pdf' }
+                            { name: 'Voice', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenAlto.pdf') },
+                            { name: 'Clarinet', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenClarinet.pdf') },
+                            { name: 'Drum Set', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenDrumSet.pdf') },
+                            { name: 'Bass', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenElectricBass.pdf') },
+                            { name: 'Piano', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenPiano.pdf') },
+                            { name: 'Vibraphone', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenVibraphone.pdf') },
+                            { name: 'Cello', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen/ShowmenVioloncello.pdf') },
                         ]
                     },
                     {
                         name: 'Showmen Varient',
-                        score: '/assets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudeFullScore.pdf',
+                        score: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudeFullScore.pdf'),
                         parts: [
-                            { name: 'Piano', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudePiano.pdf' },
-                            { name: 'Synth Drums', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudeSynthDrums.pdf' }
+                            { name: 'Piano', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudePiano.pdf') },
+                            { name: 'Synth Drums', file: require('../srcAssets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudeSynthDrums.pdf') }
                         ]
                     }
                 ]
