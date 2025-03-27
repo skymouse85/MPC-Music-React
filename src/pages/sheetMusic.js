@@ -89,7 +89,7 @@ const SheetMusic = () => {
     <>
       <TitleRow title="Sheet Music" />
       <TextContainer center="true" >
-        <p>Scores & Parts for Selected Compositions/Projects</p>
+        <p>※ Scores & Parts for Selected Compositions/Projects ※</p>
         <p>This is an ongoing project, so scores and parts are being uploaded bit by bit, and I am working on improving the layout of this page</p>
       </TextContainer>
       <ScoresContainer>{renderScores(scores)}</ScoresContainer>
