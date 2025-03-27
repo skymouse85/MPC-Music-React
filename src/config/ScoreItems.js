@@ -22,7 +22,7 @@ const scores = [
                     },
                     {
                         name: 'Showmen Varient',
-                        score: 'assets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudeFullScore.pdf',
+                        score: '/assets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudeFullScore.pdf',
                         parts: [
                             { name: 'Piano', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudePiano.pdf' },
                             { name: 'Synth Drums', file: '/assets/scores/DSE/You_Would_Do_Well/Showmen Varient/ShowmenPianoEtudeSynthDrums.pdf' }
@@ -30,44 +30,10 @@ const scores = [
                     }
                 ]
             },
-            // {
-            //     title: 'Tidy Universe',
-            //                 release_date: new Date('6/11/2016'),
-            //                 image_URL: require('../assets/images/Tidy U.jpg'),
-            //                 compositions: [
-            //                     {
-            //                         name: '',
-            //                         score: '',
-            //                         parts: ''
-            //                     }
-            //                 ]
-            // },
+
         ]
 
-        //         releases: {
-        //             title: 'Tidy Universe',
-        //             release_date: new Date('6/11/2016'),
-        //             image_URL: require('../assets/images/Tidy U.jpg'),
-        //             compositions: [
-        //                 {
-        //                     name: '',
-        //                     score: '',
-        //                     parts: ''
-        //                 }
-        //             ]
-        //         },
-        //         releases: {
-        //             title: "Another Man's Treasure",
-        //             release_date: new Date('6/24/2017'),
-        //             image_URL: require("../assets/images/Another Man's Treasure V3.jpg"),
-        //             compositions: [
-        //                 {
-        //                     name: '',
-        //                     score: '',
-        //                     parts: ''
-        //                 }
-        //             ]
-        //         },
+
 
 
     }
