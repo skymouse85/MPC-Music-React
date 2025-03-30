@@ -8,7 +8,7 @@ const ScoresContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 2rem;
+  margin: 3rem;
   `;
 
 const Section = styled.div``;

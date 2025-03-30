@@ -16,7 +16,7 @@ const StyledFooter = styled.footer`
     width: 100%;
     padding: 20px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     // align-items: start;
     margin-top: 35px;
@@ -27,7 +27,7 @@ const SiteLinksWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns for links */
     gap: 1rem;
-    // padding: 10px;
+    padding: 10px;
     // margin-left: 1.25rem;
 `;
 
