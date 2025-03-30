@@ -22,8 +22,7 @@ const AlbumGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 `;
-
-const AlbumCard = styled.div`
+const AlbumCard = styled.a`
   position: relative;
   width: 100%;
   height: 300px;
@@ -32,10 +31,15 @@ const AlbumCard = styled.div`
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 600px) {
+    height: 220px;
   }
 `;
 
@@ -59,7 +63,7 @@ const AlbumDetails = styled.div`
   text-align: center;
   color: var(--accent-primary);
   opacity: 0;
-  pointer-events: none
+  pointer-events: none;
   transition: opacity 0.3s ease;
 
   ${AlbumCard}:hover & {
@@ -71,12 +75,21 @@ const AlbumDetails = styled.div`
 const AlbumTitle = styled.h3`
   margin: 0;
   font-size: 1.25rem;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 `;
 
 const AlbumSubtitle = styled.p`
   margin: 0.2rem 0;
   font-size: 1rem;
+
+  @media (max-width: 600px) {
+    font-size: 0.85rem;
+  }
 `;
+
 
 const DiscogList = () => {
   // Sort and group data by classification
@@ -90,18 +103,21 @@ const DiscogList = () => {
 
   const renderAlbums = items =>
     items.map(item => (
-      <AlbumCard key={item.record_URL}>
+      <AlbumCard
+        key={item.record_URL}
+        href={item.record_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <AlbumImage src={item.image_URL} alt={item.record_Title} />
         <AlbumDetails>
-          <a href={item.record_URL} target='_blank' rel='noopener noreferrer'>
           <AlbumTitle>{item.artist}</AlbumTitle>
-          <AlbumSubtitle
-          >{item.record_Title}</AlbumSubtitle>
-          </a>
+          <AlbumSubtitle>{item.record_Title}</AlbumSubtitle>
           <AlbumSubtitle>Released: {formatDate(item.release_date)}</AlbumSubtitle>
         </AlbumDetails>
       </AlbumCard>
     ));
+
 
   return (
     <DiscographyContainer>

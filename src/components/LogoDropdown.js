@@ -19,7 +19,7 @@ const DropdownContainer = styled.div`
 const LogoImage = styled.img`
   width: 80px;
   height: 80px;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.9));
   animation: pulse 1.5s ease-in-out infinite;
   transition: transform 0.3s ease, filter 0.3s ease;
 
@@ -35,7 +35,7 @@ const LogoImage = styled.img`
 
   @keyframes pulse {
     0%, 100% {
-      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, .75));
     }
     50% {
       filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.6));
