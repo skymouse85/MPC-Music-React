@@ -16,9 +16,8 @@ const StyledFooter = styled.footer`
     width: 100%;
     padding: 20px 0;
     display: grid;
-    // grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    // align-items: start;
+    align-items: start;
     margin-top: 35px;
     border-top: 1px solid #003049;
  
@@ -33,11 +32,13 @@ const SiteLinksWrapper = styled.div`
     grid-template-columns: repeat(3, 1fr); /* Three columns for links */
     gap: 1rem;
     padding: 10px;
-    // margin-left: 1.25rem;
  
     @media (max-width: 600px) {
      gap: 0.5rem;
     padding: 0.5rem;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
   }
 `;
 
@@ -45,7 +46,6 @@ const FooterColumn = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-left: 1.50rem;
     justify-content: center; 
     align-items: center;
     height: 100%;
