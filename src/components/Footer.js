@@ -8,7 +8,7 @@ import InstagramIcon from '../srcAssets/icons/instagram.svg';
 import SpotifyIcon from '../srcAssets/icons/spotify.svg';
 import YoutubeIcon from '../srcAssets/icons/youtube.svg';
 import TwitterIcon from '../srcAssets/icons/twitter.svg';
-import BandcampIcon from '../srcAssets/icons/Bandcamp-button-bc-circle-black.svg';
+import BandcampIcon from '../srcAssets/icons/bandcamp-logo-svgrepo-com.svg';
 
 const StyledFooter = styled.footer`
     background-color: var(--background-primary);
@@ -21,6 +21,11 @@ const StyledFooter = styled.footer`
     // align-items: start;
     margin-top: 35px;
     border-top: 1px solid #003049;
+ 
+    @media (max-width: 600px) {
+    padding: 10px;
+    gap: 10px;
+  }
 `;
 
 const SiteLinksWrapper = styled.div`
@@ -29,6 +34,11 @@ const SiteLinksWrapper = styled.div`
     gap: 1rem;
     padding: 10px;
     // margin-left: 1.25rem;
+ 
+    @media (max-width: 600px) {
+     gap: 0.5rem;
+    padding: 0.5rem;
+  }
 `;
 
 const FooterColumn = styled.div`
@@ -53,6 +63,10 @@ const FooterLink = styled(Link)`
         text-decoration: underline;
         color: var(--accent-primary);
     }
+  
+    @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 const LinksRow = styled.div`
@@ -65,7 +79,11 @@ const FooterText = styled.p`
     font-size: 13px;
     margin: 10px 0; // Adds vertical spacing for better readability
     text-align: center;
+  @media (max-width: 600px) {
+    font-size: 11px;
+  }
 `;
+
 
 //TODO Add tidal and remove spoitfy to socials links
 
