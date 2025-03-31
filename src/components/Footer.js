@@ -97,7 +97,7 @@ function Footer() {
         { name: 'Videos', path: '/videos' },
         { name: 'Sheet Music', path: '/sheet-music' },
         { name: 'Contact', path: '/contact' },
-        { name: 'Programming', path: '/programming' },
+        // { name: 'Programming', path: '/programming' },
     ];
 
     // Group pages into columns of three

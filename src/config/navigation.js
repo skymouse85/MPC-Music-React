@@ -8,7 +8,7 @@ const menuItems = [
   { name: "Sheet Music", path: "/sheet-music" },
   { name: "Videos", path: "/videos" },
   { name: "Contact", path: "/contact" },
-  { name: "Programming", path: "/programming" },
+  // { name: "Programming", path: "/programming" },
 ];
 
 export default menuItems;
