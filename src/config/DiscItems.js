@@ -225,12 +225,20 @@ const discItems = [
         image_URL: require('../srcAssets/images/sis.jpg')
     },
     {
-        artist: "Jordan Glenn",
+        artist: "Jordan Glenn's BEAk",
         record_Title: 'BEAK',
         record_URL: 'https://jordanglenn.bandcamp.com/album/beak',
         classification: 'sideman',
         release_date: new Date('9/26/2018'),
         image_URL: require('../srcAssets/images/beak.jpg')
+    },
+    {
+        artist: "Jordan Glenn's BEAK",
+        record_Title: 'The Party',
+        record_URL: 'https://jordanglenn.bandcamp.com/album/the-party',
+        classification: 'sideman',
+        release_date: new Date('4/5/2025'),
+        image_URL: require('../srcAssets/images/beakThePartyCover.jpg')
     },
     {
         artist: "Robert Woods-Ladue",
