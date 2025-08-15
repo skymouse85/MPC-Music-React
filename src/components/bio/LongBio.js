@@ -21,7 +21,7 @@ function LongBio() {
                     Clifford also collaborates extensively with his partner and wife, Crystal Pascucci-Clifford, co-leading the ensembles Two Aerials and Inner Movements, which feature original compositions shaped by their shared improvisational language.
                 </BioP>
                 <BioP>
-                    He holds a B.M. in Classical Percussion Performance with a minor in Piano Performance from the Lamont School of Music and has studied with John Kinzie, Steve Nelson, Matt Moran, Tomomi Sugo, and John Hollenbeck.
+                    He holds a B.M. in Classical Percussion Performance from the Lamont School of Music and has studied with John Kinzie, Steve Nelson, Matt Moran, Tomomi Sugo, and John Hollenbeck.
                 </BioP>
             </BioText>
         </BioContainer>
