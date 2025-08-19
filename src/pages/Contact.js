@@ -9,6 +9,7 @@ function Contact() {
       <TitleRow title="Contact" />
       <TextContainer center="true">
         <p>📞   --> Just callllll me, don't be afraid you can calllll me.</p>
+        <p>(415) 368 1448</p>
       </TextContainer>
       <ContactForm />
     </div>
