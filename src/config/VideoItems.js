@@ -14,6 +14,10 @@ const VideoItems = [
         url: "https://www.youtube.com/live/VTK0IJGRkUE?si=gSvVszEEbwQzWzLH"
     },
     {
+        title: "The Lost Shapes play 'The Bar Men'",
+        url: "https://youtu.be/qQgwJch1ivs?si=9-QGnySIZhAEpOFf"
+    },
+    {
         title: "lisa Mezzacappa 5(ish) @ Bird and Beckett",
         url: "https://www.youtube.com/live/gsV2iDX_DeQ?si=Geb0ymls_MfO-GHb"
     },
@@ -25,6 +29,7 @@ const VideoItems = [
         title: "Improvisation",
         url: "https://youtu.be/HOI1bjIZNkQ?si=Es9JV3hhFKWr2qmG"
     },
+
     {
         title: "China Residency Update",
         url: "https://youtu.be/BlYc6YSGYVc?si=fp43Wk8rpyyWFuXg"
