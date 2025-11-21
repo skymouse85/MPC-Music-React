@@ -7,6 +7,7 @@ const VideoGrid = styled.div`
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 1.75rem;
 `
 
 function VideoGallery() {
