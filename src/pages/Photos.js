@@ -8,7 +8,7 @@ function Photos() {
     <div>
       <TitleRow title="Photos" />
       <TextContainer center="true">
-        <p>Feel Free to use any of these photos. Please credit photographers!</p>
+        <p>Feel free to use any of these photos. Please credit photographers!</p>
         {/* <p>Credit Lenny Gonzalez for all outdoor photos</p>
         <p>Credit Ginger Fierstein for all recording session photos</p> */}
       </TextContainer>
