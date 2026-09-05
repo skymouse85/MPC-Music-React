@@ -12,6 +12,7 @@ import Videos from './pages/Videos';
 import SheetMusic from './pages/SheetMusic';
 import Discography from './pages/Discog';
 import LogoDropdown from './components/LogoDropdown';
+import QRCodeGenerator from './pages/QRCodeGenerator';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/programming" component={Programming} />
             <Route path="/sheet-music" component={SheetMusic} />
             <Route path="/videos" component={Videos} />
+            <Route path="/qr" element={QRCodeGenerator} />
           </Switch>
           <Footer />
         </div>
