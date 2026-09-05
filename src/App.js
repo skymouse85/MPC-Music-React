@@ -30,7 +30,7 @@ function App() {
             <Route path="/programming" component={Programming} />
             <Route path="/sheet-music" component={SheetMusic} />
             <Route path="/videos" component={Videos} />
-            <Route path="/qr" element={QRCodeGenerator} />
+            <Route path="/qr" element={QRCodeGenerator /> } />
           </Switch>
           <Footer />
         </div>
