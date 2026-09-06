@@ -72,53 +72,48 @@ function QRCodeGenerator() {
   };
 
   return (
-    <div>
-      <TitleRow title="QR Code Generator" />
+  <div>
+    <TitleRow title="QR Code Generator" />
 
-      <TextContainer>
-        <GeneratorContainer>
-          <p>
-            Enter a URL or any text below to generate a downloadable QR code.
-          </p>
+    <GeneratorContainer>
+      <p>
+        Enter a URL or any text below to generate a downloadable QR code.
+      </p>
 
-          <Input
-            type="text"
-            value={text}
-            onChange={(event) => setText(event.target.value)}
-            placeholder="https://markpascucciclifford.com"
-            onKeyDown={(event) => {
-              if (event.key === "Enter") {
-                generateQRCode();
-              }
-            }}
-          />
+      <Input
+        type="text"
+        value={text}
+        onChange={(event) => setText(event.target.value)}
+        placeholder="https://markpascucciclifford.com"
+        onKeyDown={(event) => {
+          if (event.key === "Enter") {
+            generateQRCode();
+          }
+        }}
+      />
 
-          <ButtonRow>
-            <Button onClick={generateQRCode}>
-              Generate QR Code
-            </Button>
+      <ButtonRow>
+        <Button onClick={generateQRCode}>
+          Generate QR Code
+        </Button>
 
-            <Button onClick={copyText}>
-              Copy Text
-            </Button>
+        <Button onClick={copyText}>
+          Copy Text
+        </Button>
 
-            {qrCode && (
-              <Button onClick={downloadQRCode}>
-                Download PNG
-              </Button>
-            )}
-          </ButtonRow>
+        {qrCode && (
+          <Button onClick={downloadQRCode}>
+            Download PNG
+          </Button>
+        )}
+      </ButtonRow>
 
-          {qrCode && (
-            <QRImage
-              src={qrCode}
-              alt={`QR code for ${text}`}
-            />
-          )}
-        </GeneratorContainer>
-      </TextContainer>
-    </div>
-  );
-}
-
-export default QRCodeGenerator;
+      {qrCode && (
+        <QRImage
+          src={qrCode}
+          alt={`QR code for ${text}`}
+        />
+      )}
+    </GeneratorContainer>
+  </div>
+);
