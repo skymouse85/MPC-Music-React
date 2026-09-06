@@ -117,3 +117,5 @@ function QRCodeGenerator() {
     </GeneratorContainer>
   </div>
 )};
+
+export default QRCodeGenerator;
