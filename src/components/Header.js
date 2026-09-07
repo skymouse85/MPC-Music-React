@@ -66,14 +66,14 @@ const SubTitle = styled.div`
   }
 `;
 
-const Logo = styled.img`
-  margin-right: 4em;
+// const Logo = styled.img`
+//   margin-right: 4em;
 
-  @media (max-width: 600px) {
-    margin-right: 0;
-    margin-bottom: 1em;
-  }
-`;
+//   @media (max-width: 600px) {
+//     margin-right: 0;
+//     margin-bottom: 1em;
+//   }
+// `;
 
 function Header() {
   return (

@@ -2,22 +2,22 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import TitleRow from '../components/TitleRow';
 import TextContainer from '../components/TextContainer';
-import SmHeader from '../components/Header'; // Adjust the import path as needed
+// import SmHeader from '../components/Header'; // Adjust the import path as needed
 import LoadingSpinner from '../components/LoadingSpinner';
 
 const PageContainer = styled.div`
   margin: 2rem;
 `;
 
-const HeaderContainer = styled.div`
-  margin-bottom: 2rem;
-`;
+// const HeaderContainer = styled.div`
+//   margin-bottom: 2rem;
+// `;
 
-const Title = styled.h1`
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-`;
+// const Title = styled.h1`
+//   font-size: 2rem;
+//   text-align: center;
+//   margin-bottom: 1.5rem;
+// `;
 
 const EventListContainer = styled.div`
   display: flex;

@@ -11,7 +11,7 @@ import Programming from './pages/Programming';
 import Videos from './pages/Videos';
 import SheetMusic from './pages/SheetMusic';
 import Discography from './pages/Discog';
-import LogoDropdown from './components/LogoDropdown';
+// import LogoDropdown from './components/LogoDropdown';
 import QRCodeGenerator from './pages/QRCodeGenerator';
 
 

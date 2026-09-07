@@ -3,7 +3,7 @@ import MainImage from "../components/MainImage"
 import HeroImageContainer from "../components/HeroImageContainer";
 import colorField from "../srcAssets/images/colorField.jpg"
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 function Main() {
     return (
