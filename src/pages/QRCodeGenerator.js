@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import QRCode from "qrcode";
 import styled from "styled-components";
 import TitleRow from "../components/TitleRow";
-import TextContainer from "../components/TextContainer";
 
 const GeneratorContainer = styled.div`
   max-width: 700px;
