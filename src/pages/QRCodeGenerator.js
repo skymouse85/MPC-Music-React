@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import QRCode from "qrcode";
 import styled from "styled-components";
 import TitleRow from "../components/TitleRow";
@@ -17,11 +17,24 @@ const Input = styled.input`
   font-size: 1rem;
 `;
 
+const Controls = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+`;
+
+const Control = styled.label`
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+`;
+
 const ButtonRow = styled.div`
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 `;
 
 const Button = styled.button`
@@ -29,92 +42,183 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const QRImage = styled.img`
+const Canvas = styled.canvas`
   display: block;
   width: 300px;
+  height: 300px;
   max-width: 100%;
   margin: 2rem auto;
 `;
 
 function QRCodeGenerator() {
+  const canvasRef = useRef(null);
+
   const [text, setText] = useState("");
-  const [qrCode, setQrCode] = useState("");
+  const [foreground, setForeground] = useState("#000000");
+  const [background, setBackground] = useState("#ffffff");
+  const [logo, setLogo] = useState(null);
+  const [logoSize, setLogoSize] = useState(20);
+  const [generated, setGenerated] = useState(false);
 
   const generateQRCode = async () => {
     if (!text.trim()) return;
 
+    const canvas = canvasRef.current;
+
     try {
-      const url = await QRCode.toDataURL(text, {
+      await QRCode.toCanvas(canvas, text, {
         width: 1000,
-        margin: 2,
+        margin: 4,
         errorCorrectionLevel: "H",
+        color: {
+          dark: foreground,
+          light: background,
+        },
       });
 
-      setQrCode(url);
+      if (logo) {
+        const image = new Image();
+        image.src = logo;
+
+        image.onload = () => {
+          const ctx = canvas.getContext("2d");
+
+          const size = canvas.width * (logoSize / 100);
+          const x = (canvas.width - size) / 2;
+          const y = (canvas.height - size) / 2;
+
+          // Add a background behind the logo so the
+          // QR modules don't interfere with it.
+          const padding = size * 0.12;
+
+          ctx.fillStyle = background;
+          ctx.fillRect(
+            x - padding,
+            y - padding,
+            size + padding * 2,
+            size + padding * 2
+          );
+
+          ctx.drawImage(image, x, y, size, size);
+
+          setGenerated(true);
+        };
+      } else {
+        setGenerated(true);
+      }
     } catch (error) {
       console.error("Error generating QR code:", error);
     }
   };
 
+  const handleLogoUpload = (event) => {
+    const file = event.target.files[0];
+
+    if (!file) return;
+
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      setLogo(reader.result);
+    };
+
+    reader.readAsDataURL(file);
+  };
+
   const downloadQRCode = () => {
-    if (!qrCode) return;
+    const canvas = canvasRef.current;
+
+    if (!canvas || !generated) return;
 
     const link = document.createElement("a");
-    link.href = qrCode;
+
     link.download = "qr-code.png";
+    link.href = canvas.toDataURL("image/png");
     link.click();
   };
 
-  const copyText = async () => {
-    if (!text) return;
-    await navigator.clipboard.writeText(text);
-  };
-
   return (
-  <div>
-    <TitleRow title="QR Code Generator" />
+    <div>
+      <TitleRow title="QR Code Generator" />
 
-    <GeneratorContainer>
-      <p>
-        Enter a URL or any text below to generate a downloadable QR code.
-      </p>
+      <GeneratorContainer>
+        <p>
+          Enter a URL or text and customize your QR code.
+        </p>
 
-      <Input
-        type="text"
-        value={text}
-        onChange={(event) => setText(event.target.value)}
-        placeholder="https://markpascucciclifford.com"
-        onKeyDown={(event) => {
-          if (event.key === "Enter") {
-            generateQRCode();
-          }
-        }}
-      />
-
-      <ButtonRow>
-        <Button onClick={generateQRCode}>
-          Generate QR Code
-        </Button>
-
-        <Button onClick={copyText}>
-          Copy Text
-        </Button>
-
-        {qrCode && (
-          <Button onClick={downloadQRCode}>
-            Download PNG
-          </Button>
-        )}
-      </ButtonRow>
-
-      {qrCode && (
-        <QRImage
-          src={qrCode}
-          alt={`QR code for ${text}`}
+        <Input
+          type="text"
+          value={text}
+          onChange={(event) => setText(event.target.value)}
+          placeholder="https://markcliffordmusic.com"
         />
-      )}
-    </GeneratorContainer>
-  </div>
-)};
+
+        <Controls>
+          <Control>
+            QR Color
+            <input
+              type="color"
+              value={foreground}
+              onChange={(event) =>
+                setForeground(event.target.value)
+              }
+            />
+          </Control>
+
+          <Control>
+            Background
+            <input
+              type="color"
+              value={background}
+              onChange={(event) =>
+                setBackground(event.target.value)
+              }
+            />
+          </Control>
+
+          <Control>
+            Logo
+            <input
+              type="file"
+              accept="image/png,image/jpeg,image/webp"
+              onChange={handleLogoUpload}
+            />
+          </Control>
+
+          <Control>
+            Logo Size: {logoSize}%
+            <input
+              type="range"
+              min="10"
+              max="25"
+              value={logoSize}
+              onChange={(event) =>
+                setLogoSize(Number(event.target.value))
+              }
+            />
+          </Control>
+        </Controls>
+
+        <ButtonRow>
+          <Button onClick={generateQRCode}>
+            Generate QR Code
+          </Button>
+
+          {generated && (
+            <Button onClick={downloadQRCode}>
+              Download PNG
+            </Button>
+          )}
+        </ButtonRow>
+
+        <Canvas
+          ref={canvasRef}
+          width="1000"
+          height="1000"
+        />
+      </GeneratorContainer>
+    </div>
+  );
+}
 
 export default QRCodeGenerator;
