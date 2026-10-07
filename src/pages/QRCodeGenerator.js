@@ -44,12 +44,11 @@ const Button = styled.button`
 
 const Canvas = styled.canvas`
   display: block;
-  width: 300px;
-  height: 300px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   margin: 2rem auto;
 `;
-
 function QRCodeGenerator() {
   const canvasRef = useRef(null);
 
@@ -81,28 +80,46 @@ function QRCodeGenerator() {
         image.src = logo;
 
         image.onload = () => {
-          const ctx = canvas.getContext("2d");
+  const ctx = canvas.getContext("2d");
 
-          const size = canvas.width * (logoSize / 100);
-          const x = (canvas.width - size) / 2;
-          const y = (canvas.height - size) / 2;
+  const maxSize = canvas.width * (logoSize / 100);
 
-          // Add a background behind the logo so the
-          // QR modules don't interfere with it.
-          const padding = size * 0.12;
+  const aspectRatio = image.width / image.height;
 
-          ctx.fillStyle = background;
-          ctx.fillRect(
-            x - padding,
-            y - padding,
-            size + padding * 2,
-            size + padding * 2
-          );
+  let logoWidth;
+  let logoHeight;
 
-          ctx.drawImage(image, x, y, size, size);
+  if (aspectRatio >= 1) {
+    logoWidth = maxSize;
+    logoHeight = maxSize / aspectRatio;
+  } else {
+    logoHeight = maxSize;
+    logoWidth = maxSize * aspectRatio;
+  }
 
-          setGenerated(true);
-        };
+  const x = (canvas.width - logoWidth) / 2;
+  const y = (canvas.height - logoHeight) / 2;
+
+  const padding = maxSize * 0.12;
+
+  ctx.fillStyle = background;
+  ctx.fillRect(
+    x - padding,
+    y - padding,
+    logoWidth + padding * 2,
+    logoHeight + padding * 2
+  );
+
+  ctx.drawImage(
+    image,
+    x,
+    y,
+    logoWidth,
+    logoHeight
+  );
+
+  setGenerated(true);
+};
       } else {
         setGenerated(true);
       }
@@ -213,8 +230,8 @@ function QRCodeGenerator() {
 
         <Canvas
           ref={canvasRef}
-          width="1000"
-          height="1000"
+          // width="1000"
+          // height="1000"
         />
       </GeneratorContainer>
     </div>
